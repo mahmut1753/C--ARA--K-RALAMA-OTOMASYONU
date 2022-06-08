@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A24D78CC-7C98-4891-ADC3-1462F8E74CDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication10</RootNamespace>
+    <AssemblyName>WindowsFormsApplication10</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>471F4E75B460F67CAFC76EF81E9A3C38A4217119</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WindowsFormsApplication10_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa.Designer.cs">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aracekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aracekle.Designer.cs">
+      <DependentUpon>aracekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="arackiralama.cs" />
+    <Compile Include="arackıralamaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arackıralamaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arackıralamaDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arackıralamaDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arackıralamaDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arackıralamaDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arackıralamaDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arackıralamaDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arackıralamaDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arackıralamaDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arackıralamaDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arackıralamaDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="arackıralamaDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>arackıralamaDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="araçlistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="araçlistele.Designer.cs">
+      <DependentUpon>araçlistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirim ekranları\aynikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim ekranları\aynikayit.Designer.cs">
+      <DependentUpon>aynikayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirim ekranları\bosalan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim ekranları\bosalan.Designer.cs">
+      <DependentUpon>bosalan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirim ekranları\guncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim ekranları\guncelle.Designer.cs">
+      <DependentUpon>guncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirim ekranları\guncellenemedi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim ekranları\guncellenemedi.Designer.cs">
+      <DependentUpon>guncellenemedi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirim ekranları\tcehliyet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim ekranları\tcehliyet.Designer.cs">
+      <DependentUpon>tcehliyet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="combobox.cs" />
+    <Compile Include="bildirim ekranları\hataformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim ekranları\hataformu.Designer.cs">
+      <DependentUpon>hataformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirim ekranları\kayıteklendi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim ekranları\kayıteklendi.Designer.cs">
+      <DependentUpon>kayıteklendi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bildirim ekranları\kayıteklenemedi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bildirim ekranları\kayıteklenemedi.Designer.cs">
+      <DependentUpon>kayıteklenemedi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="markamodel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="markamodel.Designer.cs">
+      <DependentUpon>markamodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="müşteriekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müşteriekle.Designer.cs">
+      <DependentUpon>müşteriekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="müşterilistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="müşterilistele.Designer.cs">
+      <DependentUpon>müşterilistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="satissayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="satissayfasi.Designer.cs">
+      <DependentUpon>satissayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="sözleşme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sözleşme.Designer.cs">
+      <DependentUpon>sözleşme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aracekle.resx">
+      <DependentUpon>aracekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="araçlistele.resx">
+      <DependentUpon>araçlistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim ekranları\aynikayit.resx">
+      <DependentUpon>aynikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim ekranları\bosalan.resx">
+      <DependentUpon>bosalan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim ekranları\guncelle.resx">
+      <DependentUpon>guncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim ekranları\guncellenemedi.resx">
+      <DependentUpon>guncellenemedi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim ekranları\hataformu.resx">
+      <DependentUpon>hataformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim ekranları\kayıteklendi.resx">
+      <DependentUpon>kayıteklendi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim ekranları\kayıteklenemedi.resx">
+      <DependentUpon>kayıteklenemedi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bildirim ekranları\tcehliyet.resx">
+      <DependentUpon>tcehliyet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="markamodel.resx">
+      <DependentUpon>markamodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="müşteriekle.resx">
+      <DependentUpon>müşteriekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="müşterilistele.resx">
+      <DependentUpon>müşterilistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="satissayfasi.resx">
+      <DependentUpon>satissayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sözleşme.resx">
+      <DependentUpon>sözleşme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="arackıralamaDataSet.xsc">
+      <DependentUpon>arackıralamaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arackıralamaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arackıralamaDataSet.xss">
+      <DependentUpon>arackıralamaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet1.xsc">
+      <DependentUpon>arackıralamaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arackıralamaDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arackıralamaDataSet1.xss">
+      <DependentUpon>arackıralamaDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet2.xsc">
+      <DependentUpon>arackıralamaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arackıralamaDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arackıralamaDataSet2.xss">
+      <DependentUpon>arackıralamaDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet3.xsc">
+      <DependentUpon>arackıralamaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arackıralamaDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arackıralamaDataSet3.xss">
+      <DependentUpon>arackıralamaDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet4.xsc">
+      <DependentUpon>arackıralamaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arackıralamaDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arackıralamaDataSet4.xss">
+      <DependentUpon>arackıralamaDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet5.xsc">
+      <DependentUpon>arackıralamaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arackıralamaDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arackıralamaDataSet5.xss">
+      <DependentUpon>arackıralamaDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet6.xsc">
+      <DependentUpon>arackıralamaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="arackıralamaDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>arackıralamaDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="arackıralamaDataSet6.xss">
+      <DependentUpon>arackıralamaDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="WindowsFormsApplication10_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
